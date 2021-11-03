@@ -22,7 +22,7 @@
 }
 
 .content{
-    background-color: pink;
+    background-color: skyblue;
     display: grid;
     grid-template-rows: 1fr 5fr;
     place-items: center;
