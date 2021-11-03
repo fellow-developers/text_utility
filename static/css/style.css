@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.container h1{
+    padding: 2vh 0 2vh 2vh;
+    background-color: gray;
+}
+
+.container p{
+    padding: 2vh 0 2vh 2vh;
+    background-color: gray;
+    text-align: center;
+}
+
+.content{
+    background-color: pink;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    place-items: center;
+    margin: 10vmax;
+}
+
+.content h2{
+    padding: 2vh 30vw 2vh 30vw;
+    background-color: gray;
+}
