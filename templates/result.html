@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>Text Utility</title>
 </head>
 <body>
-    <h1>Text Utility</h1>
-    <h2>Result</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur quos odio quasi delectus perferendis!</p>
-    <button>Copy</button>
-    <button>Back</button>
-    <p>Copyright Team Fellow Developers 2021</p>
+    <div class="container">
+        <h1>Text Utility</h1>
+        <div class="content">
+            <p class="pb">Result</p>
+            <textarea class="pb" name="strInput" id="strInput" cols="200" rows="15" disabled>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, dolor maxime labore nulla aspernatur facere, recusandae iusto nihil natus, architecto modi doloribus. Libero voluptates consequuntur labore nisi? Cupiditate, minima dignissimos.</textarea>
+            <div class="btns">
+                <button class="btn">Copy</button>
+                <button class="btn">Back</button>
+            </div>
+        </div>
+        <p class="footer">Copyright Team Fellow Developers 2021</p>
+    </div>
 </body>
 </html>
