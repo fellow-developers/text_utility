@@ -9,7 +9,7 @@ def to_upper_case(input_str):
 # create function for covert lowercase
 def to_lower_case(input_str):
     '''done by abhyanshu'''
-    pass
+    return input_str.lower()
 
 # create function to remove all spaces
 def remove_all_spaces(input_str):
