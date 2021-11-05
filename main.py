@@ -1,13 +1,38 @@
-from flask import Flask,render_template
+from flask import Flask,render_template, request
 app = Flask(__name__)
+
+# create function for covert uppercase
+def to_upper_case(input_str):
+    pass
+
+# create function for covert lowercase
+def to_lower_case(input_str):
+    pass
+
+# create function to remove all spaces
+def remove_all_spaces(input_str):
+    pass
+
+# create function to remove all cammas
+def remove_all_commas(input_str):
+    pass
 
 @app.route('/')
 def index():
     return render_template('index.html')
 
-@app.route('/result')
+@app.route('/result', methods=["POST"])
 def result():
-    return render_template('result.html')
+    if request.method=="POST":
+        # print(request.form.get('strInput'))
+        # print(request.form.get('toCase'))
+        # print(request.form.get('removeAllSpaces'))
+        # print(request.form.get('removeAllCommas'))
+
+        input_string=request.form.get('strInput')
+        print(input_string)
+        
+        return render_template('result.html')
 
 if __name__ == '__main__':
    app.run(debug=True)
