@@ -19,7 +19,7 @@ def remove_all_spaces(input_str):
 # create function to remove all cammas
 def remove_all_commas(input_str):
     '''done by abhishek'''
-    pass
+    return input_str.replace(',','')
 
 @app.route('/')
 def index():
