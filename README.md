@@ -11,7 +11,7 @@ This website is developed for helping people to customize their sentences.
 
 ## Tech Stack
 
-**Client:** HTML, CSS
+**Client:** HTML, CSS, JavaScript
 
 **Server:** Python, Flask
 
