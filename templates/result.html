@@ -12,13 +12,14 @@
         <h1>Text Utility</h1>
         <div class="content">
             <p class="pb">Result</p>
-            <textarea class="pb" name="strInput" id="strInput" cols="200" rows="15" disabled>{{result}}</textarea>
+            <textarea class="pb strInput" name="strInput" id="result" cols="200" rows="15" disabled>{{result}}</textarea>
             <div class="btns">
-                <button class="btn">Copy</button>
+                <button id="btnCopy" class="btn">Copy</button>
                 <button class="btn"><a href="/">Back</a></button>
             </div>
         </div>
         <p class="footer">Copyright Team Fellow Developers 2021</p>
     </div>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
 </body>
 </html>
