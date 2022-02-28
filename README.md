@@ -20,25 +20,25 @@ This website is developed for helping people to customize their sentences.
 Clone the project
 
 ```bash
-  git clone git@github.com:fellow-developers/text_utility.git
+git clone git@github.com:fellow-developers/text_utility.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd text_utility
+cd text_utility
 ```
 
 Install dependencies
 
 ```bash
-  pip install - r requirements.txt
+pip install - r requirements.txt
 ```
 
 Start the server
 
 ```bash
-  py main.py
+py main.py
 ```
 
 ## Screenshots
