@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "gulp",
-    "watch": "gulp default watch"
+    "watch": "gulp default watch",
+    "lint": "eslint ./ts/**/*.ts",
+    "lint:fix": "eslint ./ts/**/*.ts --fix"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,11 @@
   },
   "homepage": "https://github.com/fellow-developers/text_utility#readme",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-google": "^0.14.0",
     "gulp": "^4.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
