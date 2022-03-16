@@ -4,13 +4,41 @@ on:
       - main
 
 jobs:
-  e2e-tests:
-    runs-on: windows-latest # or macos-latest, ubuntu-latest
+  backend-build:
+    runs-on: ubuntu-latest # or macos-latest, windows-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-python@v2
+        # with:
+        #   python-version: 3.9
+
+      - name: Create and activate virtual environment
+        run: |
+          python3 -m venv .venv
+          source .venv/bin/activate
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # - name: Run unit tests
+      #   run: pytest
+
+      - name: Run backend server
+        run: python3 main.py
+
+  frontend-build:
+    needs: backend-build
+
+    runs-on: ubuntu-latest # or macos-latest, windows-latest
 
     steps:
       - uses: actions/checkout@v2
 
       - uses: actions/setup-node@v2
+        # with:
+        #   node-version: 16
 
       - uses: microsoft/playwright-github-action@v1
 
