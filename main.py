@@ -28,14 +28,8 @@ def index():
 @app.route('/result', methods=["POST"])
 def result():
     if request.method=="POST":
-        # print(request.form)
-        # print(request.form.get('strInput'))
-        # print(request.form.get('toCase'))
-        # print(request.form.get('removeAllSpaces'))
-        # print(request.form.get('removeAllCommas'))
 
         input_string=request.form.get('strInput')
-        # print(input_string)
 
         if request.form.get('toCase')=='upper':
             input_string=to_upper_case(input_string)
