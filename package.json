@@ -1,0 +1,35 @@
+{
+  "name": "text_utility",
+  "version": "1.0.0",
+  "description": "This website is developed for helping people to customize their sentences.",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "watch": "gulp default watch",
+    "lint": "eslint ./ts/**/*.ts",
+    "lint:fix": "eslint ./ts/**/*.ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fellow-developers/text_utility.git"
+  },
+  "author": "fellow developers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fellow-developers/text_utility/issues"
+  },
+  "homepage": "https://github.com/fellow-developers/text_utility#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-google": "^0.14.0",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "sass": "^1.49.8",
+    "typescript": "^4.5.5"
+  }
+}

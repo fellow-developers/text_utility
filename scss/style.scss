@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  h1 {
+    padding: 3vh;
+    background-color: #c4c4c4;
+  }
+  p {
+    padding: 2vh 0 2vh 2vh;
+    background-color: #c4c4c4;
+    text-align: center;
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  place-items: center;
+  margin: 4vmax 7vmax;
+  p {
+    padding: 2vmax 0;
+    background-color: #c4c4c4;
+    border-radius: 1vmax;
+    font-size: 3vmax;
+    width: 100%;
+  }
+  form {
+    display: grid;
+    grid-template-rows: 4fr 1fr 0.5fr;
+    place-items: center;
+  }
+}
+
+.strInput {
+  background-color: #c4c4c4;
+  width: 100%;
+  height: 100%;
+  border-radius: 1vmax;
+  padding: 1vmax;
+  font-size: 20px;
+  color: black;
+}
+
+.options {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  font-size: 1.8vmax;
+  padding: 1vmax 1.5vmax;
+  label {
+    font-size: 1.8vmax;
+  }
+}
+
+.btns {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 8vmax;
+}
+
+.btn {
+  background-color: #c4c4c4;
+  padding: 1vmax 3.2vmax;
+  border-radius: 1vmax;
+  font-size: 1.5vmax;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.footer {
+  font-size: 1.5vmax;
+}
+
+.pb {
+  margin-bottom: 2vmax;
+}
