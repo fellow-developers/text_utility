@@ -10,7 +10,10 @@
     "ecmaVersion": "latest"
   },
   "plugins": ["@typescript-eslint"],
-  "ignorePatterns": ["gulpfile.js"],
+  "ignorePatterns": ["gulpfile.js", "playwright.config.ts"],
   // TODO: Add rule
-  "rules": {}
+  "rules": {
+    // windows linebreaks when not in production environment
+    "linebreak-style": 0
+  }
 }
