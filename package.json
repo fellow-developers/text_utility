@@ -1,0 +1,19 @@
+{
+  "name": "text_utility",
+  "version": "1.0.0",
+  "description": "This website is developed for helping people to customize their sentences.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fellow-developers/text_utility.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fellow-developers/text_utility/issues"
+  },
+  "homepage": "https://github.com/fellow-developers/text_utility#readme"
+}
